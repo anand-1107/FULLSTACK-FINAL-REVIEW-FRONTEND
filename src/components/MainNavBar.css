@@ -1,0 +1,86 @@
+/* ── MainNavBar – sky-blue light theme ── */
+.main-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 5%;
+  border-bottom: 1px solid rgba(14,165,233,0.18);
+  background: rgba(240,249,255,0.92);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(14,165,233,0.08);
+}
+
+.main-navbar-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: clamp(20px, 4vw, 24px);
+  font-weight: 700;
+  text-decoration: none;
+  color: #0369a1;
+  letter-spacing: -0.02em;
+}
+
+.main-navbar-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px; height: 38px;
+  border-radius: 12px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #fff;
+  background: linear-gradient(135deg, #0ea5e9, #22c55e);
+  box-shadow: 0 8px 18px rgba(14,165,233,0.28);
+}
+
+.main-navbar-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.main-navbar-theme-toggle {
+  padding: 9px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(14,165,233,0.25);
+  background: rgba(14,165,233,0.08);
+  color: #0369a1;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.main-navbar-theme-toggle:hover { background: rgba(14,165,233,0.14); }
+
+.main-navbar-btn {
+  padding: 10px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+.main-navbar-btn:hover { transform: translateY(-1px); filter: brightness(1.05); }
+.main-navbar-btn:focus-visible { outline: 3px solid rgba(14,165,233,0.45); outline-offset: 2px; }
+
+.main-navbar-btn-login {
+  background: linear-gradient(135deg, #0ea5e9, #38bdf8);
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(14,165,233,0.28);
+}
+.main-navbar-btn-register {
+  background: linear-gradient(135deg, #22c55e, #4ade80);
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(34,197,94,0.24);
+}
+
+@media (max-width: 600px) {
+  .main-navbar { padding-top: 12px; padding-bottom: 12px; }
+  .main-navbar-actions { gap: 8px; }
+  .main-navbar-btn { padding: 8px 12px; font-size: 13px; }
+}

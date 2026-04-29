@@ -1,0 +1,187 @@
+/* ── Footer – sky-blue light theme ── */
+.footer-premium {
+  margin-top: auto;
+  padding: 26px 5% 18px;
+  color: #0c2a40;
+  border-top: 1px solid rgba(14,165,233,0.18);
+  background:
+    radial-gradient(50rem 18rem at 8% -12%, rgba(14,165,233,0.12), transparent 50%),
+    linear-gradient(180deg, rgba(224,242,254,0.95), rgba(204,233,251,0.98));
+}
+
+.footer-shell {
+  width: min(1140px, 100%);
+  margin: 0 auto;
+}
+
+.footer-topline {
+  margin-bottom: 14px;
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(14,165,233,0.18);
+  background: rgba(255,255,255,0.82);
+  color: #4a7a9b;
+  font-size: 0.82rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.footer-topline-divider {
+  width: 28px; height: 1px;
+  background: rgba(14,165,233,0.3);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 0.85fr 1fr;
+  gap: 28px;
+  padding: 28px;
+  border: 1px solid rgba(14,165,233,0.16);
+  border-radius: 18px;
+  background: rgba(255,255,255,0.92);
+  box-shadow: 0 8px 30px rgba(14,165,233,0.09);
+}
+
+.footer-brand-col h3 {
+  margin: 0;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-family: 'Space Grotesk', 'Trebuchet MS', sans-serif;
+  letter-spacing: -0.01em;
+  color: #082035;
+}
+
+.footer-brand-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px; height: 36px;
+  border-radius: 12px;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #fff;
+  background: linear-gradient(135deg, #0ea5e9, #22c55e);
+  box-shadow: 0 8px 18px rgba(14,165,233,0.24);
+}
+
+.footer-brand-col p {
+  margin: 12px 0 16px;
+  color: #4a7a9b;
+  line-height: 1.65;
+  font-size: 0.94rem;
+}
+
+.footer-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.footer-badges span {
+  border: 1px solid rgba(14,165,233,0.28);
+  color: #0369a1;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  padding: 6px 11px;
+  background: rgba(14,165,233,0.08);
+  font-weight: 500;
+}
+
+.footer-links-col h4 {
+  margin: 0 0 12px;
+  color: #082035;
+  font-size: 0.98rem;
+  font-family: 'Space Grotesk', 'Trebuchet MS', sans-serif;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.footer-links a {
+  color: #0ea5e9;
+  text-decoration: none;
+  width: fit-content;
+  font-weight: 500;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+.footer-links a:hover {
+  color: #0284c7;
+  transform: translateX(2px);
+}
+
+.footer-contact-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #4a7a9b;
+  font-size: 0.9rem;
+}
+.footer-contact-col h4 {
+  margin: 0 0 4px;
+  color: #082035;
+  font-size: 0.98rem;
+  font-family: 'Space Grotesk', 'Trebuchet MS', sans-serif;
+}
+
+.footer-contact-row {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+.footer-contact-label {
+  min-width: 56px;
+  color: #7aadcc;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.footer-bottom {
+  padding-top: 16px;
+  margin-top: 14px;
+  border-top: 1px solid rgba(14,165,233,0.14);
+  color: #4a7a9b;
+  font-size: 0.82rem;
+  width: min(1140px, 100%);
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+}
+
+.footer-legal-links {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.footer-legal-links a {
+  color: #4a7a9b;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.footer-legal-links a:hover { color: #0ea5e9; }
+
+@media (max-width: 950px) {
+  .footer-topline { flex-direction: column; gap: 8px; text-align: center; }
+  .footer-topline-divider { width: 1px; height: 16px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 20px; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+}
+@media (max-width: 600px) {
+  .footer-premium { padding-left: 3%; padding-right: 3%; }
+  .footer-grid { padding: 18px; }
+  .footer-legal-links { gap: 10px; }
+}
